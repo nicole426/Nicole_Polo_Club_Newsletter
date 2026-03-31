@@ -1,1 +1,552 @@
-<!DOCTYPE html><html lang="en"><head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Polo Club - Available Listings | Samantha Gornstein Team</title> <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"> <style> * { margin: 0; padding: 0; box-sizing: border-box; } body { font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #333333; background-color: #f4f4f4; } .back-link { display: inline-block; color: #00a8e1; text-decoration: none; font-size: 13px; font-weight: 500; letter-spacing: 0.5px; margin-bottom: 25px; } .back-link:hover { text-decoration: underline; } .container { max-width: 1100px; margin: 0 auto; padding: 40px 20px; } .page-header { margin-bottom: 30px; background: url('https://raw.githubusercontent.com/nicole426/Nicole_Polo_Club_Newsletter/claude/deploy-market-email-pages-53JAK/Samantha_Golf_Article.png') center center / cover no-repeat; position: relative; padding: 50px 40px; overflow: hidden; } .page-header::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(26, 62, 92, 0.82); } .page-title { color: #ffffff; font-size: 32px; font-weight: 300; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; position: relative; } .page-subtitle { color: #c8dce8; font-size: 14px; padding-bottom: 15px; border-bottom: 3px solid #00a8e1; position: relative; } .summary-stats { display: flex; gap: 0; margin-bottom: 30px; background-color: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.06); } .summary-stat { flex: 1; padding: 20px 25px; border-left: 3px solid #00a8e1; } .summary-stat-label { color: #888888; font-size: 11px; font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 5px; } .summary-stat-value { color: #1a3e5c; font-size: 24px; font-weight: 400; } .highlight-callout { background-color: #1a3e5c; color: #ffffff; padding: 30px 35px; margin-bottom: 30px; border-left: 5px solid #00a8e1; box-shadow: 0 2px 8px rgba(0,0,0,0.1); } .highlight-callout h3 { font-size: 18px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 12px; color: #00a8e1; } .highlight-callout p { font-size: 15px; line-height: 1.7; color: #e0e0e0; margin-bottom: 10px; } .highlight-callout .takeaway { font-size: 14px; font-weight: 500; color: #ffffff; font-style: italic; margin-top: 5px; } .property-card { background-color: #ffffff; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border-left: 4px solid #00a8e1; padding: 25px 30px; } .property-header { display: flex; align-items: center; gap: 15px; margin-bottom: 8px; flex-wrap: wrap; } .property-address { color: #1a3e5c; font-size: 18px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; } .property-badge { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; padding: 5px 12px; } .property-badge.new-construction { background-color: #fce4e4; color: #c0392b; } .property-badge.waterfront { background-color: #e8f4f8; color: #0077a8; } .property-badge.price-reduced { background-color: #fff3cd; color: #856404; } .property-badge.townhouse { background-color: #e8f5e9; color: #2e7d32; } .property-badge.condo { background-color: #f3e5f5; color: #7b1fa2; } .property-subdivision { color: #888888; font-size: 12px; font-weight: 500; margin-bottom: 4px; } .property-price { color: #1a3e5c; font-size: 24px; font-weight: 400; margin-bottom: 20px; } .property-specs { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 20px; } .specs-grid { display: flex; gap: 40px; } .property-spec { min-width: 80px; } .property-spec-label { color: #888888; font-size: 10px; font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 4px; } .property-spec-value { color: #1a3e5c; font-size: 16px; font-weight: 500; } .property-footer { display: flex; align-items: center; gap: 15px; flex-wrap: wrap; } .property-mls { display: inline-block; color: #1a3e5c; font-size: 12px; font-weight: 500; padding: 6px 12px; border: 1px solid #e0e0e0; border-radius: 3px; background-color: #fafafa; } .property-dom { color: #888888; font-size: 12px; font-weight: 500; } .property-cta { display: inline-block; background-color: #00a8e1; color: #ffffff; text-decoration: none; padding: 10px 22px; font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; transition: background-color 0.2s; margin-left: auto; } .property-cta:hover { background-color: #0090c0; } .contact-cta { background-color: #1a3e5c; padding: 50px 30px; text-align: center; margin-top: 30px; } .contact-cta h3 { color: #ffffff; font-size: 24px; font-weight: 300; margin-bottom: 15px; } .contact-cta p { color: #e8e8e8; font-size: 15px; margin-bottom: 25px; } .contact-cta a { display: inline-block; background-color: #00a8e1; color: #ffffff; text-decoration: none; padding: 14px 30px; font-size: 13px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; } .footer { background-color: #1a3e5c; padding: 25px 30px; text-align: center; border-top: 1px solid #2a4e6c; } .footer-logo { color: #ffffff; font-size: 14px; font-weight: 300; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; } .footer-phone { color: #00a8e1; font-size: 16px; font-weight: 500; } .footer-disclaimer { color: #888888; font-size: 10px; margin-top: 12px; line-height: 1.5; } @media (max-width: 900px) { .specs-grid { flex-wrap: wrap; gap: 20px; } .property-specs { flex-direction: column; gap: 20px; } .summary-stats { flex-wrap: wrap; } .summary-stat { flex: 1 1 45%; } } @media (max-width: 600px) { .summary-stat { flex: 1 1 100%; } .page-title { font-size: 24px; } } </style></head><body> <div class="container"> <a href="article.html" class="back-link">&larr; Back to Market Intelligence</a> <div class="page-header"> <h1 class="page-title">Polo Club &mdash; Available Listings</h1> <div class="page-subtitle">Updated March 13, 2026 | 15 Active Listings</div> </div> <div class="summary-stats"> <div class="summary-stat"> <div class="summary-stat-label">Price Range</div> <div class="summary-stat-value">$479K &ndash; $8.6M</div> </div> <div class="summary-stat"> <div class="summary-stat-label">Active Listings</div> <div class="summary-stat-value">15</div> </div> <div class="summary-stat"> <div class="summary-stat-label">Communities</div> <div class="summary-stat-value">9</div> </div> <div class="summary-stat"> <div class="summary-stat-label">Avg Days on Market</div> <div class="summary-stat-value">67</div> </div> </div> <div class="highlight-callout"> <h3>Polo Club Market Snapshot</h3> <p>Polo Club offers one of South Florida's most diverse luxury lifestyle communities, with homes ranging from elegant condominiums to sprawling waterfront estates. With 15 active listings across 9 distinct neighborhoods, there is opportunity at every price point.</p> <p class="takeaway">This is one of the most active club communities in Palm Beach County &mdash; and having an insider advisor makes all the difference.</p> </div> <!-- Property 1 --> <div class="property-card"> <div class="property-header"> <h2 class="property-address">16600 Senterra Drive</h2> <span class="property-badge new-construction">New Construction 2026</span> </div> <div class="property-subdivision">Royal Hidden Cove &bull; Delray Beach, FL 33484</div> <div class="property-price">$8,600,000</div> <div class="property-specs"> <div class="specs-grid"> <div class="property-spec"> <div class="property-spec-label">Bedrooms</div> <div class="property-spec-value">5</div> </div> <div class="property-spec"> <div class="property-spec-label">Bathrooms</div> <div class="property-spec-value">6.1</div> </div> <div class="property-spec"> <div class="property-spec-label">Living SqFt</div> <div class="property-spec-value">6,069</div> </div> <div class="property-spec"> <div class="property-spec-label">Year Built</div> <div class="property-spec-value">2026</div> </div> </div> </div> <div class="property-footer"> <span class="property-mls">MLS#: RX-11136515</span> <span class="property-dom">133 days on market</span> <a href="https://bogenhomes.com/homes-for-sale-details/16600-SENTERRA-DELRAY-BEACH-FL-33484/R11136515/43/" target="_blank" class="property-cta">View Details</a> </div> </div> <!-- Property 2 --> <div class="property-card"> <div class="property-header"> <h2 class="property-address">16670 Senterra Drive</h2> <span class="property-badge waterfront">Waterfront</span> </div> <div class="property-subdivision">Royal Hidden Cove &bull; Delray Beach, FL 33484</div> <div class="property-price">$7,775,000</div> <div class="property-specs"> <div class="specs-grid"> <div class="property-spec"> <div class="property-spec-label">Bedrooms</div> <div class="property-spec-value">4</div> </div> <div class="property-spec"> <div class="property-spec-label">Bathrooms</div> <div class="property-spec-value">5.1</div> </div> <div class="property-spec"> <div class="property-spec-label">Living SqFt</div> <div class="property-spec-value">4,394</div> </div> <div class="property-spec"> <div class="property-spec-label">Year Built</div> <div class="property-spec-value">1991</div> </div> </div> </div> <div class="property-footer"> <span class="property-mls">MLS#: RX-11129141</span> <span class="property-dom">149 days on market</span> <a href="https://bogenhomes.com/homes-for-sale-details/16670-SENTERRA-DELRAY-BEACH-FL-33484/R11129141/43/" target="_blank" class="property-cta">View Details</a> </div> </div> <!-- Property 3 --> <div class="property-card"> <div class="property-header"> <h2 class="property-address">5537 Steeple Chase</h2> </div> <div class="property-subdivision">Steeple Chase &bull; Boca Raton, FL 33496</div> <div class="property-price">$2,100,000</div> <div class="property-specs"> <div class="specs-grid"> <div class="property-spec"> <div class="property-spec-label">Bedrooms</div> <div class="property-spec-value">3</div> </div> <div class="property-spec"> <div class="property-spec-label">Bathrooms</div> <div class="property-spec-value">3</div> </div> <div class="property-spec"> <div class="property-spec-label">Living SqFt</div> <div class="property-spec-value">2,477</div> </div> <div class="property-spec"> <div class="property-spec-label">Year Built</div> <div class="property-spec-value">1987</div> </div> </div> </div> <div class="property-footer"> <span class="property-mls">MLS#: RX-11157480</span> <span class="property-dom">33 days on market</span> <a href="https://bogenhomes.com/homes-for-sale-details/5537-STEEPLE-CHASE-BOCA-RATON-FL-33496/R11157480/43/" target="_blank" class="property-cta">View Details</a> </div> </div> <!-- Property 4 --> <div class="property-card"> <div class="property-header"> <h2 class="property-address">6468 Polo Pointe Way</h2> <span class="property-badge price-reduced">Price Reduced</span> <span class="property-badge waterfront">Waterfront</span> </div> <div class="property-subdivision">Crystal Bay &bull; Delray Beach, FL 33484</div> <div class="property-price">$1,674,000</div> <div class="property-specs"> <div class="specs-grid"> <div class="property-spec"> <div class="property-spec-label">Bedrooms</div> <div class="property-spec-value">4</div> </div> <div class="property-spec"> <div class="property-spec-label">Bathrooms</div> <div class="property-spec-value">3.1</div> </div> <div class="property-spec"> <div class="property-spec-label">Living SqFt</div> <div class="property-spec-value">3,202</div> </div> <div class="property-spec"> <div class="property-spec-label">Year Built</div> <div class="property-spec-value">2002</div> </div> </div> </div> <div class="property-footer"> <span class="property-mls">MLS#: RX-11148746</span> <span class="property-dom">76 days on market</span> <a href="https://bogenhomes.com/homes-for-sale-details/6468-POLO-POINTE-DELRAY-BEACH-FL-33484/R11148746/43/" target="_blank" class="property-cta">View Details</a> </div> </div> <!-- Property 5 --> <div class="property-card"> <div class="property-header"> <h2 class="property-address">5061 Via De Amalfi Drive</h2> <span class="property-badge waterfront">Waterfront</span> </div> <div class="property-subdivision">Ville De Capri &bull; Boca Raton, FL 33496</div> <div class="property-price">$1,025,000</div> <div class="property-specs"> <div class="specs-grid"> <div class="property-spec"> <div class="property-spec-label">Bedrooms</div> <div class="property-spec-value">3</div> </div> <div class="property-spec"> <div class="property-spec-label">Bathrooms</div> <div class="property-spec-value">3</div> </div> <div class="property-spec"> <div class="property-spec-label">Living SqFt</div> <div class="property-spec-value">1,744</div> </div> <div class="property-spec"> <div class="property-spec-label">Year Built</div> <div class="property-spec-value">1986</div> </div> </div> </div> <div class="property-footer"> <span class="property-mls">MLS#: RX-11161677</span> <span class="property-dom">33 days on market</span> <a href="https://bogenhomes.com/homes-for-sale-details/5061-VIA-DE-AMALFI-DRIVE-BOCA-RATON-FL-33496/R11161677/43/" target="_blank" class="property-cta">View Details</a> </div> </div> <!-- Property 6 --> <div class="property-card"> <div class="property-header"> <h2 class="property-address">6237 San Michel Way</h2> <span class="property-badge townhouse">Townhouse</span> <span class="property-badge waterfront">Waterfront</span> </div> <div class="property-subdivision">Portofino &bull; Delray Beach, FL 33484</div> <div class="property-price">$995,000</div> <div class="property-specs"> <div class="specs-grid"> <div class="property-spec"> <div class="property-spec-label">Bedrooms</div> <div class="property-spec-value">3</div> </div> <div class="property-spec"> <div class="property-spec-label">Bathrooms</div> <div class="property-spec-value">2.1</div> </div> <div class="property-spec"> <div class="property-spec-label">Living SqFt</div> <div class="property-spec-value">2,366</div> </div> <div class="property-spec"> <div class="property-spec-label">Year Built</div> <div class="property-spec-value">1990</div> </div> </div> </div> <div class="property-footer"> <span class="property-mls">MLS#: RX-11159006</span> <span class="property-dom">42 days on market</span> <a href="https://bogenhomes.com/homes-for-sale-details/6237-SAN-MICHEL-WAY-DELRAY-BEACH-FL-33484/R11159006/43/" target="_blank" class="property-cta">View Details</a> </div> </div> <!-- Property 7 --> <div class="property-card"> <div class="property-header"> <h2 class="property-address">5097 Windsor Parke Drive</h2> <span class="property-badge townhouse">Townhouse</span> <span class="property-badge waterfront">Waterfront</span> </div> <div class="property-subdivision">Windsor Parke &bull; Boca Raton, FL 33496</div> <div class="property-price">$995,000</div> <div class="property-specs"> <div class="specs-grid"> <div class="property-spec"> <div class="property-spec-label">Bedrooms</div> <div class="property-spec-value">3</div> </div> <div class="property-spec"> <div class="property-spec-label">Bathrooms</div> <div class="property-spec-value">2</div> </div> <div class="property-spec"> <div class="property-spec-label">Living SqFt</div> <div class="property-spec-value">1,623</div> </div> <div class="property-spec"> <div class="property-spec-label">Year Built</div> <div class="property-spec-value">1989</div> </div> </div> </div> <div class="property-footer"> <span class="property-mls">MLS#: RX-11162920</span> <span class="property-dom">29 days on market</span> <a href="https://bogenhomes.com/homes-for-sale-details/5097-WINDSOR-PARKE-DRIVE-BOCA-RATON-FL-33496/R11162920/43/" target="_blank" class="property-cta">View Details</a> </div> </div> <!-- Property 8 --> <div class="property-card"> <div class="property-header"> <h2 class="property-address">17629 Ashbourne Way A</h2> <span class="property-badge condo">Condo</span> <span class="property-badge waterfront">Waterfront</span> </div> <div class="property-subdivision">Ashbourne &bull; Boca Raton, FL 33496</div> <div class="property-price">$899,000</div> <div class="property-specs"> <div class="specs-grid"> <div class="property-spec"> <div class="property-spec-label">Bedrooms</div> <div class="property-spec-value">3</div> </div> <div class="property-spec"> <div class="property-spec-label">Bathrooms</div> <div class="property-spec-value">2.1</div> </div> <div class="property-spec"> <div class="property-spec-label">Living SqFt</div> <div class="property-spec-value">1,867</div> </div> <div class="property-spec"> <div class="property-spec-label">Year Built</div> <div class="property-spec-value">1987</div> </div> </div> </div> <div class="property-footer"> <span class="property-mls">MLS#: RX-11158266</span> <span class="property-dom">44 days on market</span> <a href="https://bogenhomes.com/homes-for-sale-details/17629-ASHBOURNE-WAY-A-BOCA-RATON-FL-33496/R11158266/43/" target="_blank" class="property-cta">View Details</a> </div> </div> <!-- Property 9 --> <div class="property-card"> <div class="property-header"> <h2 class="property-address">6229 Graycliff Drive D</h2> <span class="property-badge condo">Condo</span> <span class="property-badge waterfront">Waterfront</span> </div> <div class="property-subdivision">Coquina &bull; Boca Raton, FL 33496</div> <div class="property-price">$749,000</div> <div class="property-specs"> <div class="specs-grid"> <div class="property-spec"> <div class="property-spec-label">Bedrooms</div> <div class="property-spec-value">4</div> </div> <div class="property-spec"> <div class="property-spec-label">Bathrooms</div> <div class="property-spec-value">3</div> </div> <div class="property-spec"> <div class="property-spec-label">Living SqFt</div> <div class="property-spec-value">2,430</div> </div> <div class="property-spec"> <div class="property-spec-label">Year Built</div> <div class="property-spec-value">1997</div> </div> </div> </div> <div class="property-footer"> <span class="property-mls">MLS#: RX-11163574</span> <span class="property-dom">27 days on market</span> <a href="https://bogenhomes.com/homes-for-sale-details/6229-GRAYCLIFF-DRIVE-D-BOCA-RATON-FL-33496/R11163574/43/" target="_blank" class="property-cta">View Details</a> </div> </div> <!-- Property 10 --> <div class="property-card"> <div class="property-header"> <h2 class="property-address">5158 Windsor Parke Drive</h2> <span class="property-badge townhouse">Townhouse</span> </div> <div class="property-subdivision">Windsor Parke &bull; Boca Raton, FL 33496</div> <div class="property-price">$730,000</div> <div class="property-specs"> <div class="specs-grid"> <div class="property-spec"> <div class="property-spec-label">Bedrooms</div> <div class="property-spec-value">3</div> </div> <div class="property-spec"> <div class="property-spec-label">Bathrooms</div> <div class="property-spec-value">2</div> </div> <div class="property-spec"> <div class="property-spec-label">Living SqFt</div> <div class="property-spec-value">1,760</div> </div> <div class="property-spec"> <div class="property-spec-label">Year Built</div> <div class="property-spec-value">1989</div> </div> </div> </div> <div class="property-footer"> <span class="property-mls">MLS#: RX-11100001</span> <span class="property-dom">268 days on market</span> <a href="https://bogenhomes.com/homes-for-sale-details/5158-WINDSOR-PARKE-DRIVE-BOCA-RATON-FL-33496/R11100001/43/" target="_blank" class="property-cta">View Details</a> </div> </div> <!-- Property 11 --> <div class="property-card"> <div class="property-header"> <h2 class="property-address">5184 Lake Catalina Drive D</h2> <span class="property-badge condo">Condo</span> <span class="property-badge waterfront">Waterfront</span> </div> <div class="property-subdivision">Catalina &bull; Boca Raton, FL 33496</div> <div class="property-price">$629,000</div> <div class="property-specs"> <div class="specs-grid"> <div class="property-spec"> <div class="property-spec-label">Bedrooms</div> <div class="property-spec-value">3</div> </div> <div class="property-spec"> <div class="property-spec-label">Bathrooms</div> <div class="property-spec-value">2.1</div> </div> <div class="property-spec"> <div class="property-spec-label">Living SqFt</div> <div class="property-spec-value">2,053</div> </div> <div class="property-spec"> <div class="property-spec-label">Year Built</div> <div class="property-spec-value">1989</div> </div> </div> </div> <div class="property-footer"> <span class="property-mls">MLS#: RX-11131133</span> <span class="property-dom">153 days on market</span> <a href="https://bogenhomes.com/homes-for-sale-details/5184-LAKE-CATALINA-DRIVE-D-BOCA-RATON-FL-33496/R11131133/43/" target="_blank" class="property-cta">View Details</a> </div> </div> <!-- Property 12 --> <div class="property-card"> <div class="property-header"> <h2 class="property-address">5070 Lake Catalina Drive C</h2> <span class="property-badge condo">Condo</span> <span class="property-badge waterfront">Waterfront</span> </div> <div class="property-subdivision">Catalina &bull; Boca Raton, FL 33496</div> <div class="property-price">$599,000</div> <div class="property-specs"> <div class="specs-grid"> <div class="property-spec"> <div class="property-spec-label">Bedrooms</div> <div class="property-spec-value">3</div> </div> <div class="property-spec"> <div class="property-spec-label">Bathrooms</div> <div class="property-spec-value">2</div> </div> <div class="property-spec"> <div class="property-spec-label">Living SqFt</div> <div class="property-spec-value">1,751</div> </div> <div class="property-spec"> <div class="property-spec-label">Year Built</div> <div class="property-spec-value">1989</div> </div> </div> </div> <div class="property-footer"> <span class="property-mls">MLS#: RX-11152072</span> <span class="property-dom">64 days on market</span> <a href="https://bogenhomes.com/homes-for-sale-details/5070-LAKE-CATALINA-DRIVE-C-BOCA-RATON-FL-33496/R11152072/43/" target="_blank" class="property-cta">View Details</a> </div> </div> <!-- Property 13 --> <div class="property-card"> <div class="property-header"> <h2 class="property-address">5142 Lake Catalina Drive B</h2> <span class="property-badge condo">Condo</span> </div> <div class="property-subdivision">Catalina &bull; Boca Raton, FL 33496</div> <div class="property-price">$599,000</div> <div class="property-specs"> <div class="specs-grid"> <div class="property-spec"> <div class="property-spec-label">Bedrooms</div> <div class="property-spec-value">3</div> </div> <div class="property-spec"> <div class="property-spec-label">Bathrooms</div> <div class="property-spec-value">2.1</div> </div> <div class="property-spec"> <div class="property-spec-label">Living SqFt</div> <div class="property-spec-value">2,053</div> </div> <div class="property-spec"> <div class="property-spec-label">Year Built</div> <div class="property-spec-value">1989</div> </div> </div> </div> <div class="property-footer"> <span class="property-mls">MLS#: RX-11164791</span> <span class="property-dom">22 days on market</span> <a href="https://bogenhomes.com/homes-for-sale-details/5142-LAKE-CATALINA-DRIVE-B-BOCA-RATON-FL-33496/R11164791/43/" target="_blank" class="property-cta">View Details</a> </div> </div> <!-- Property 14 --> <div class="property-card"> <div class="property-header"> <h2 class="property-address">5160 Lake Catalina Drive C</h2> <span class="property-badge condo">Condo</span> <span class="property-badge waterfront">Waterfront</span> </div> <div class="property-subdivision">Catalina &bull; Boca Raton, FL 33496</div> <div class="property-price">$499,000</div> <div class="property-specs"> <div class="specs-grid"> <div class="property-spec"> <div class="property-spec-label">Bedrooms</div> <div class="property-spec-value">2</div> </div> <div class="property-spec"> <div class="property-spec-label">Bathrooms</div> <div class="property-spec-value">2</div> </div> <div class="property-spec"> <div class="property-spec-label">Living SqFt</div> <div class="property-spec-value">1,837</div> </div> <div class="property-spec"> <div class="property-spec-label">Year Built</div> <div class="property-spec-value">1989</div> </div> </div> </div> <div class="property-footer"> <span class="property-mls">MLS#: RX-11162986</span> <span class="property-dom">28 days on market</span> <a href="https://bogenhomes.com/homes-for-sale-details/5160-LAKE-CATALINA-DRIVE-C-BOCA-RATON-FL-33496/R11162986/43/" target="_blank" class="property-cta">View Details</a> </div> </div> <!-- Property 15 --> <div class="property-card"> <div class="property-header"> <h2 class="property-address">5100 Lake Catalina Drive C</h2> <span class="property-badge condo">Condo</span> <span class="property-badge waterfront">Waterfront</span> </div> <div class="property-subdivision">Catalina &bull; Boca Raton, FL 33496</div> <div class="property-price">$479,000</div> <div class="property-specs"> <div class="specs-grid"> <div class="property-spec"> <div class="property-spec-label">Bedrooms</div> <div class="property-spec-value">3</div> </div> <div class="property-spec"> <div class="property-spec-label">Bathrooms</div> <div class="property-spec-value">2</div> </div> <div class="property-spec"> <div class="property-spec-label">Living SqFt</div> <div class="property-spec-value">2,107</div> </div> <div class="property-spec"> <div class="property-spec-label">Year Built</div> <div class="property-spec-value">1989</div> </div> </div> </div> <div class="property-footer"> <span class="property-mls">MLS#: RX-11139065</span> <span class="property-dom">125 days on market</span> <a href="https://bogenhomes.com/homes-for-sale-details/5100-LAKE-CATALINA-DRIVE-C-BOCA-RATON-FL-33496/R11139065/43/" target="_blank" class="property-cta">View Details</a> </div> </div> </div> <!-- Contact CTA --> <div class="contact-cta"> <h3>Questions about Polo Club?</h3> <p>Contact Samantha Gornstein for insider access and market data.</p> <a href="mailto:samantha.gornstein@elliman.com">Contact Samantha</a> </div> <!-- Footer --> <footer class="footer"> <div class="footer-logo">The Edmund Bogen Team</div> <div class="footer-phone">Douglas Elliman Real Estate</div> <div class="footer-disclaimer">The Edmund Bogen Team at Douglas Elliman Real Estate. All information deemed reliable but not guaranteed. Pricing and availability subject to change without notice.</div> </footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Polo Club - Active Listings | March 2026 | Samantha Gornstein</title>
+ <style>
+   * { margin: 0; padding: 0; box-sizing: border-box; }
+   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #f5f5f5; padding: 20px; }
+   .container { max-width: 1400px; margin: 0 auto; background: white; padding: 40px; }
+   .header { border-bottom: 4px solid #00a8e1; padding-bottom: 20px; margin-bottom: 30px; }
+   .header h1 { color: #1a3e5c; font-size: 2.5em; font-weight: 300; text-transform: uppercase; letter-spacing: 0.08em; }
+   .header-subtitle { color: #666; font-size: 1.1em; margin-top: 10px; }
+   .summary-stats { display: flex; gap: 30px; margin-bottom: 30px; flex-wrap: wrap; }
+   .summary-stat { background: #f8fbff; padding: 20px 30px; border-radius: 8px; border-left: 4px solid #00a8e1; }
+   .summary-stat-label { color: #666; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.1em; }
+   .summary-stat-value { color: #1a3e5c; font-size: 1.8em; font-weight: 600; margin-top: 5px; }
+   .listing-card { background: white; border: 1px solid #e8e8e8; border-left: 4px solid #00a8e1; padding: 25px 25px 25px 30px; margin-bottom: 20px; display: grid; grid-template-columns: 1fr auto; gap: 20px; align-items: start; transition: all 0.3s ease; }
+   .listing-card:hover { border-left-color: #1a3e5c; box-shadow: 0 4px 20px rgba(26, 62, 92, 0.15); transform: translateX(5px); }
+   .listing-card.waterfront { border-left-color: #28a745; }
+   .listing-card.sold { border-left-color: #999; opacity: 0.85; }
+   .listing-address { color: #1a3e5c; font-size: 1.4em; font-weight: 500; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.03em; }
+   .listing-badge { display: inline-block; padding: 3px 10px; font-size: 0.7em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; border-radius: 3px; margin-left: 10px; vertical-align: middle; }
+   .badge-waterfront { background: #d4edda; color: #155724; }
+   .badge-sold { background: #e2e3e5; color: #383d41; }
+   .badge-reduced { background: #fff3cd; color: #856404; }
+   .listing-price { color: #000000; font-size: 2em; font-weight: 300; margin-bottom: 10px; }
+   .listing-details { display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 12px; }
+   .listing-detail-item { display: flex; flex-direction: column; }
+   .listing-detail-label { color: #666; font-size: 0.75em; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 3px; }
+   .listing-detail-value { color: #1a3e5c; font-size: 1em; font-weight: 600; }
+   .listing-description { color: #555; font-size: 0.9em; line-height: 1.6; margin-bottom: 12px; }
+   .listing-mls { display: inline-block; background: #f4f4f4; color: #1a3e5c; padding: 8px 15px; font-size: 0.85em; font-weight: 500; margin-top: 10px; letter-spacing: 0.05em; }
+   .view-listing-btn { background: #00a8e1; color: white; padding: 14px 30px; text-decoration: none; font-size: 0.95em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; display: inline-block; transition: all 0.3s ease; border-radius: 4px; }
+   .view-listing-btn:hover { background: #0088b8; transform: translateY(-2px); }
+   .back-button { background: #1a3e5c; color: white; padding: 12px 25px; text-decoration: none; font-size: 0.9em; font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em; display: inline-block; margin-bottom: 20px; border-radius: 4px; }
+   .back-button:hover { background: #0d1f2d; }
+   .disclaimer { color: #999; font-size: 0.75em; line-height: 1.6; margin-top: 30px; padding-top: 20px; border-top: 1px solid #e8e8e8; }
+   @media (max-width: 768px) {
+     .listing-card { grid-template-columns: 1fr; }
+     .listing-cta { text-align: center; }
+     .summary-stats { flex-direction: column; }
+     .container { padding: 20px; }
+     .header h1 { font-size: 1.6em; }
+   }
+ </style>
+</head>
+<body>
+
+<div class="container">
+
+ <a href="newsletter.html" class="back-button">&larr; Back to Newsletter</a>
+
+ <div class="header">
+   <h1>Polo Club &mdash; Active Listings</h1>
+   <p class="header-subtitle">Updated March 26, 2026 | 15 Active Listings | Prepared by Samantha Gornstein</p>
+ </div>
+
+ <div class="summary-stats">
+   <div class="summary-stat">
+     <div class="summary-stat-label">Price Range</div>
+     <div class="summary-stat-value">$479K &ndash; $8.6M</div>
+   </div>
+   <div class="summary-stat">
+     <div class="summary-stat-label">Active Listings</div>
+     <div class="summary-stat-value">15</div>
+   </div>
+   <div class="summary-stat">
+     <div class="summary-stat-label">Sold YTD</div>
+     <div class="summary-stat-value">18</div>
+   </div>
+ </div>
+
+ <!-- Listing 1: $8,600,000 -->
+ <div class="listing-card">
+   <div class="listing-info">
+     <div class="listing-address">16600 Senterra Drive, Delray Beach</div>
+     <div class="listing-price">$8,600,000</div>
+     <div class="listing-details">
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Beds</div>
+         <div class="listing-detail-value">5</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Baths</div>
+         <div class="listing-detail-value">6 Full / 1 Half</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Sq Ft</div>
+         <div class="listing-detail-value">6,069</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Built</div>
+         <div class="listing-detail-value">2026</div>
+       </div>
+     </div>
+     <div class="listing-description">A once-in-a-generation custom estate in Hidden Cove. Modern architectural icon featuring soaring 23-ft entry ceilings, dramatic floating staircase, oversized elevator, gallery loft platform, gourmet Wolf/Sub-Zero kitchen, infinity pool with spa, 4-car garage with double-stack lift capacity, and rooftop terraces.</div>
+     <div class="listing-mls">MLS#: RX-11136515</div>
+   </div>
+   <div class="listing-cta">
+     <a href="https://bogenhomes.com/homes-for-sale-details/16600-SENTERRA-DRIVE-DELRAY-BEACH-FL-33446/R11136515/43/" target="_blank" class="view-listing-btn">View Details</a>
+   </div>
+ </div>
+
+ <!-- Listing 2: $7,775,000 -->
+ <div class="listing-card">
+   <div class="listing-info">
+     <div class="listing-address">16670 Senterra Drive, Delray Beach</div>
+     <div class="listing-price">$7,775,000</div>
+     <div class="listing-details">
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Beds</div>
+         <div class="listing-detail-value">4</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Baths</div>
+         <div class="listing-detail-value">5 Full / 1 Half</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Sq Ft</div>
+         <div class="listing-detail-value">4,394</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Built</div>
+         <div class="listing-detail-value">1991</div>
+       </div>
+     </div>
+     <div class="listing-description">Rare, totally private courtyard estate on a coveted double cul-de-sac on a .55-acre lake/golf point lot. Grand travertine drive, custom glass entry, 20-ft ceilings, soaring wall of windows, main-level primary suite with private guest house, gourmet kitchen, pool, spa, summer kitchen, and cabana bath overlooking lake and fountain views.</div>
+     <div class="listing-mls">MLS#: RX-11129141</div>
+   </div>
+   <div class="listing-cta">
+     <a href="https://bogenhomes.com/homes-for-sale-details/16670-SENTERRA-DRIVE-DELRAY-BEACH-FL-33446/R11129141/43/" target="_blank" class="view-listing-btn">View Details</a>
+   </div>
+ </div>
+
+ <!-- Listing 3: $2,100,000 -->
+ <div class="listing-card">
+   <div class="listing-info">
+     <div class="listing-address">5537 Steeple Chase, Boca Raton</div>
+     <div class="listing-price">$2,100,000</div>
+     <div class="listing-details">
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Beds</div>
+         <div class="listing-detail-value">3</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Baths</div>
+         <div class="listing-detail-value">3 Full</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Sq Ft</div>
+         <div class="listing-detail-value">2,477</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Built</div>
+         <div class="listing-detail-value">1987</div>
+       </div>
+     </div>
+     <div class="listing-description">Single-family home in the prestigious Steeple Chase neighborhood of The Polo Club. This three-bedroom residence offers nearly 2,500 square feet of living space with full access to world-class amenities including two championship golf courses, tennis, pickleball, state-of-the-art fitness center, full-service spa, and multiple dining venues.</div>
+     <div class="listing-mls">MLS#: RX-11157480</div>
+   </div>
+   <div class="listing-cta">
+     <a href="https://bogenhomes.com/homes-for-sale-details/5537-STEEPLE-CHASE-BOCA-RATON-FL-33496/R11157480/43/" target="_blank" class="view-listing-btn">View Details</a>
+   </div>
+ </div>
+
+ <!-- Listing 4: $1,674,000 -->
+ <div class="listing-card">
+   <div class="listing-info">
+     <div class="listing-address">6468 Polo Pointe Way, Delray Beach</div>
+     <div class="listing-price">$1,674,000</div>
+     <div class="listing-details">
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Beds</div>
+         <div class="listing-detail-value">4</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Baths</div>
+         <div class="listing-detail-value">3 Full / 1 Half</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Sq Ft</div>
+         <div class="listing-detail-value">3,202</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Built</div>
+         <div class="listing-detail-value">2002</div>
+       </div>
+     </div>
+     <div class="listing-description">Elegant courtyard home in Crystal Bay offering serene lake views, open floor plan with volume ceilings, crown molding, arched windows, and wood flooring in all bedrooms. Gourmet kitchen with quartz waterfall countertops, custom wood cabinetry, gas cooktop, and breakfast bar. Polished marble in main living areas and private courtyard with pool.</div>
+     <div class="listing-mls">MLS#: RX-11148746</div>
+   </div>
+   <div class="listing-cta">
+     <a href="https://bogenhomes.com/homes-for-sale-details/6468-POLO-POINTE-WAY-DELRAY-BEACH-FL-33496/R11148746/43/" target="_blank" class="view-listing-btn">View Details</a>
+   </div>
+ </div>
+
+ <!-- Listing 5: $1,025,000 -->
+ <div class="listing-card">
+   <div class="listing-info">
+     <div class="listing-address">5061 Via De Amalfi Drive, Boca Raton</div>
+     <div class="listing-price">$1,025,000</div>
+     <div class="listing-details">
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Beds</div>
+         <div class="listing-detail-value">3</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Baths</div>
+         <div class="listing-detail-value">3 Full</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Sq Ft</div>
+         <div class="listing-detail-value">1,744</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Built</div>
+         <div class="listing-detail-value">1986</div>
+       </div>
+     </div>
+     <div class="listing-description">Charming residence in the sought-after Ville De Capri neighborhood within The Polo Club. This inviting home features a well-designed floor plan with three bedrooms and three full baths, offering comfortable living in one of South Florida's premier country club communities. Full access to championship golf, tennis, pickleball, fitness, and dining.</div>
+     <div class="listing-mls">MLS#: RX-11161677</div>
+   </div>
+   <div class="listing-cta">
+     <a href="https://bogenhomes.com/homes-for-sale-details/5061-VIA-DE-AMALFI-DRIVE-BOCA-RATON-FL-33496/R11161677/43/" target="_blank" class="view-listing-btn">View Details</a>
+   </div>
+ </div>
+
+ <!-- Listing 6: $995,000 -->
+ <div class="listing-card">
+   <div class="listing-info">
+     <div class="listing-address">6237 San Michel Way, Delray Beach</div>
+     <div class="listing-price">$995,000</div>
+     <div class="listing-details">
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Beds</div>
+         <div class="listing-detail-value">3</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Baths</div>
+         <div class="listing-detail-value">2 Full / 1 Half</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Sq Ft</div>
+         <div class="listing-detail-value">2,366</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Built</div>
+         <div class="listing-detail-value">1990</div>
+       </div>
+     </div>
+     <div class="listing-description">Spacious townhome in the desirable Portofino enclave of The Polo Club. This well-appointed residence offers three bedrooms, generous living space, and access to world-class amenities including two championship golf courses, tennis, pickleball, full-service spa, and multiple dining venues.</div>
+     <div class="listing-mls">MLS#: RX-11159006</div>
+   </div>
+   <div class="listing-cta">
+     <a href="https://bogenhomes.com/homes-for-sale-details/6237-SAN-MICHEL-WAY-DELRAY-BEACH-FL-33484/R11159006/43/" target="_blank" class="view-listing-btn">View Details</a>
+   </div>
+ </div>
+
+ <!-- Listing 7: $995,000 -->
+ <div class="listing-card">
+   <div class="listing-info">
+     <div class="listing-address">5097 Windsor Parke Drive, Boca Raton</div>
+     <div class="listing-price">$995,000</div>
+     <div class="listing-details">
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Beds</div>
+         <div class="listing-detail-value">3</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Baths</div>
+         <div class="listing-detail-value">2 Full</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Sq Ft</div>
+         <div class="listing-detail-value">1,623</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Built</div>
+         <div class="listing-detail-value">1989</div>
+       </div>
+     </div>
+     <div class="listing-description">Desirable townhome in Windsor Parke, a popular enclave within The Polo Club. This three-bedroom home features a functional layout, close proximity to the clubhouse and amenities, and access to two championship golf courses, tennis, pickleball, fitness center, spa, and resort-style dining.</div>
+     <div class="listing-mls">MLS#: RX-11162920</div>
+   </div>
+   <div class="listing-cta">
+     <a href="https://bogenhomes.com/homes-for-sale-details/5097-WINDSOR-PARKE-DRIVE-BOCA-RATON-FL-33496/R11162920/43/" target="_blank" class="view-listing-btn">View Details</a>
+   </div>
+ </div>
+
+ <!-- Listing 8: $899,000 -->
+ <div class="listing-card">
+   <div class="listing-info">
+     <div class="listing-address">17629 Ashbourne Way A, Boca Raton</div>
+     <div class="listing-price">$899,000</div>
+     <div class="listing-details">
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Beds</div>
+         <div class="listing-detail-value">3</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Baths</div>
+         <div class="listing-detail-value">2 Full / 1 Half</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Sq Ft</div>
+         <div class="listing-detail-value">1,867</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Built</div>
+         <div class="listing-detail-value">1987</div>
+       </div>
+     </div>
+     <div class="listing-description">Lovely condo in the Ashbourne community within The Polo Club, offering three bedrooms and generous living space. Enjoy the full suite of Polo Club amenities including two championship golf courses, tennis, pickleball, state-of-the-art fitness center, spa, and multiple dining options.</div>
+     <div class="listing-mls">MLS#: RX-11158266</div>
+   </div>
+   <div class="listing-cta">
+     <a href="https://bogenhomes.com/homes-for-sale-details/17629-ASHBOURNE-WAY-A-BOCA-RATON-FL-33496/R11158266/43/" target="_blank" class="view-listing-btn">View Details</a>
+   </div>
+ </div>
+
+ <!-- Listing 10: $749,000 -->
+ <div class="listing-card">
+   <div class="listing-info">
+     <div class="listing-address">6229 Graycliff Drive D, Boca Raton</div>
+     <div class="listing-price">$749,000</div>
+     <div class="listing-details">
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Beds</div>
+         <div class="listing-detail-value">4</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Baths</div>
+         <div class="listing-detail-value">3 Full</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Sq Ft</div>
+         <div class="listing-detail-value">2,430</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Built</div>
+         <div class="listing-detail-value">1997</div>
+       </div>
+     </div>
+     <div class="listing-description">Spacious four-bedroom condo in the Coquina neighborhood of The Polo Club, offering one of the larger floor plans in the community. Enjoy resort-style living with access to two championship golf courses, tennis, pickleball, a full-service fitness center and spa, and multiple dining venues.</div>
+     <div class="listing-mls">MLS#: RX-11163574</div>
+   </div>
+   <div class="listing-cta">
+     <a href="https://bogenhomes.com/homes-for-sale-details/6229-GRAYCLIFF-DRIVE-D-BOCA-RATON-FL-33496/R11163574/43/" target="_blank" class="view-listing-btn">View Details</a>
+   </div>
+ </div>
+
+ <!-- Listing 11: $730,000 -->
+ <div class="listing-card">
+   <div class="listing-info">
+     <div class="listing-address">5158 Windsor Parke Drive, Boca Raton</div>
+     <div class="listing-price">$730,000</div>
+     <div class="listing-details">
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Beds</div>
+         <div class="listing-detail-value">3</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Baths</div>
+         <div class="listing-detail-value">2 Full</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Sq Ft</div>
+         <div class="listing-detail-value">1,760</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Built</div>
+         <div class="listing-detail-value">1989</div>
+       </div>
+     </div>
+     <div class="listing-description">Beautiful and inviting one-story townhome in Windsor Parke, a short walk from the clubhouse. Volume ceilings, tastefully designed kitchen, primary suite with custom walk-in closet and soaking tub, tile flooring, crown molding, plantation shutters, and screen-enclosed patio. 2019 new tile roof and A/C, 2021 water heater. Two-car garage.</div>
+     <div class="listing-mls">MLS#: RX-11100001</div>
+   </div>
+   <div class="listing-cta">
+     <a href="https://bogenhomes.com/homes-for-sale-details/5158-WINDSOR-PARKE-DRIVE-BOCA-RATON-FL-33496/R11100001/43/" target="_blank" class="view-listing-btn">View Details</a>
+   </div>
+ </div>
+
+ <!-- Listing 12: $629,000 (Waterfront) -->
+ <div class="listing-card waterfront">
+   <div class="listing-info">
+     <div class="listing-address">5184 Lake Catalina Drive D, Boca Raton <span class="listing-badge badge-waterfront">Waterfront</span></div>
+     <div class="listing-price">$629,000</div>
+     <div class="listing-details">
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Beds</div>
+         <div class="listing-detail-value">3</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Baths</div>
+         <div class="listing-detail-value">2 Full / 1 Half</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Sq Ft</div>
+         <div class="listing-detail-value">2,053</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Built</div>
+         <div class="listing-detail-value">1989</div>
+       </div>
+     </div>
+     <div class="listing-description">Bright and airy 2-bedroom + den condo showcasing panoramic lake and golf course views with gorgeous sunset vistas. Open floor plan with high ceilings, wet bar, L-shaped screened-in patio, spacious primary suite with walk-in closet, and 1-car garage. Steps from private community pool and walking distance to Clubhouse. Currently rented through 4/14/26.</div>
+     <div class="listing-mls">MLS#: RX-11131133</div>
+   </div>
+   <div class="listing-cta">
+     <a href="https://bogenhomes.com/homes-for-sale-details/5184-LAKE-CATALINA-DRIVE-D-BOCA-RATON-FL-33496/R11131133/43/" target="_blank" class="view-listing-btn">View Details</a>
+   </div>
+ </div>
+
+ <!-- Listing 13: $599,000 (Waterfront) -->
+ <div class="listing-card waterfront">
+   <div class="listing-info">
+     <div class="listing-address">5070 Lake Catalina Drive C, Boca Raton <span class="listing-badge badge-waterfront">Waterfront</span></div>
+     <div class="listing-price">$599,000</div>
+     <div class="listing-details">
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Beds</div>
+         <div class="listing-detail-value">3</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Baths</div>
+         <div class="listing-detail-value">2 Full</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Sq Ft</div>
+         <div class="listing-detail-value">1,751</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Built</div>
+         <div class="listing-detail-value">1989</div>
+       </div>
+     </div>
+     <div class="listing-description">Gorgeous ground-level condo with picturesque panoramic lake and golf views. 2 bedrooms plus den, 2 screened patios, and single-car garage. Updated kitchen with GE stainless steel appliances, glistening backsplash, and granite countertops. Newer roof and AC. Steps from private community pool, close to Clubhouse and Polo Club Shoppes. Lease in place 11/1/25 - 3/31/26.</div>
+     <div class="listing-mls">MLS#: RX-11152072</div>
+   </div>
+   <div class="listing-cta">
+     <a href="https://bogenhomes.com/homes-for-sale-details/5070-LAKE-CATALINA-DRIVE-C-BOCA-RATON-FL-33496/R11152072/43/" target="_blank" class="view-listing-btn">View Details</a>
+   </div>
+ </div>
+
+ <!-- Listing 14: $599,000 (Waterfront) -->
+ <div class="listing-card waterfront">
+   <div class="listing-info">
+     <div class="listing-address">5142 Lake Catalina Drive B, Boca Raton <span class="listing-badge badge-waterfront">Waterfront</span></div>
+     <div class="listing-price">$599,000</div>
+     <div class="listing-details">
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Beds</div>
+         <div class="listing-detail-value">3</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Baths</div>
+         <div class="listing-detail-value">2 Full / 1 Half</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Sq Ft</div>
+         <div class="listing-detail-value">2,053</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Built</div>
+         <div class="listing-detail-value">1989</div>
+       </div>
+     </div>
+     <div class="listing-description">Lovely condo in the Catalina community offering lake and golf course views. This three-bedroom residence features a spacious layout with over 2,000 square feet of living space, and is just steps from the private community pool. Full Polo Club membership provides access to championship golf, tennis, pickleball, spa, and dining.</div>
+     <div class="listing-mls">MLS#: RX-11164791</div>
+   </div>
+   <div class="listing-cta">
+     <a href="https://bogenhomes.com/agents/samantha-gornstein/" target="_blank" class="view-listing-btn">View Details</a>
+   </div>
+ </div>
+
+ <!-- Listing 15: $499,000 (Waterfront) -->
+ <div class="listing-card waterfront">
+   <div class="listing-info">
+     <div class="listing-address">5160 Lake Catalina Drive C, Boca Raton <span class="listing-badge badge-waterfront">Waterfront</span></div>
+     <div class="listing-price">$499,000</div>
+     <div class="listing-details">
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Beds</div>
+         <div class="listing-detail-value">2</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Baths</div>
+         <div class="listing-detail-value">2 Full</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Sq Ft</div>
+         <div class="listing-detail-value">1,837</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Built</div>
+         <div class="listing-detail-value">1989</div>
+       </div>
+     </div>
+     <div class="listing-description">Well-situated condo in the Catalina neighborhood with lake and golf course views. This two-bedroom home offers nearly 1,840 square feet of living space, close proximity to the community pool, and walking distance to the Clubhouse. Full access to Polo Club amenities including two championship golf courses, tennis, pickleball, fitness, spa, and dining.</div>
+     <div class="listing-mls">MLS#: RX-11162986</div>
+   </div>
+   <div class="listing-cta">
+     <a href="https://bogenhomes.com/homes-for-sale-details/5160-LAKE-CATALINA-DRIVE-C-BOCA-RATON-FL-33496/R11162986/43/" target="_blank" class="view-listing-btn">View Details</a>
+   </div>
+ </div>
+
+ <!-- Listing 16: $479,000 (Waterfront, Price Reduced) -->
+ <div class="listing-card waterfront">
+   <div class="listing-info">
+     <div class="listing-address">5100 Lake Catalina Drive C, Boca Raton <span class="listing-badge badge-waterfront">Waterfront</span> <span class="listing-badge badge-reduced">Price Reduced</span></div>
+     <div class="listing-price">$479,000</div>
+     <div class="listing-details">
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Beds</div>
+         <div class="listing-detail-value">3</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Baths</div>
+         <div class="listing-detail-value">2 Full</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Sq Ft</div>
+         <div class="listing-detail-value">2,107</div>
+       </div>
+       <div class="listing-detail-item">
+         <div class="listing-detail-label">Built</div>
+         <div class="listing-detail-value">1989</div>
+       </div>
+     </div>
+     <div class="listing-description">Lovely 3-bed, 2-bath first-floor condo offering effortless one-level living with golf and lake views. Open kitchen flowing into living and dining zones, completely renovated guest bath, and expansive wrap-around terrace ideal for morning coffee. New roof and 1-car garage. Polo Club membership is $250,000.</div>
+     <div class="listing-mls">MLS#: RX-11139065</div>
+   </div>
+   <div class="listing-cta">
+     <a href="https://bogenhomes.com/homes-for-sale-details/5100-LAKE-CATALINA-DRIVE-C-BOCA-RATON-FL-33496/R11139065/43/" target="_blank" class="view-listing-btn">View Details</a>
+   </div>
+ </div>
+
+ <div style="text-align: center; margin-top: 40px; padding-top: 30px; border-top: 2px solid #e8e8e8;">
+   <p style="color: #666; font-size: 0.9em; margin-bottom: 15px;">Questions about Polo Club?</p>
+   <a href="mailto:samantha@bogenhomes.com" style="display: inline-block; background: #1a3e5c; color: white; padding: 14px 40px; text-decoration: none; font-size: 1em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; border-radius: 4px;">Contact Samantha Gornstein</a>
+   <p style="color: #999; font-size: 0.8em; margin-top: 20px;">Samantha Gornstein | The Edmund Bogen Team | Douglas Elliman Real Estate | (561) 707-6607</p>
+ </div>
+
+ <div class="disclaimer">
+   <p>&copy; 2026 Douglas Elliman Real Estate. All material presented herein is intended for information purposes only. While this information is believed to be correct, it is represented subject to errors, omissions, changes or withdrawal without notice. All property information, including, but not limited to square footage, room count, number of bedrooms and the school district in property listings should be verified by your own attorney, architect or zoning expert. If your property is currently listed with another real estate broker, please disregard this offer. It is not our intention to solicit the offerings of other real estate brokers. We cooperate with them fully. Equal Housing Opportunity.</p>
+ </div>
+
+</div>
+
+</body>
+</html>
