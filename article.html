@@ -1,233 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>A $75,000 Deadline – The Edmund Bogen Team</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A $75,000 Deadline – What the Polo Club’s New Capital Contribution Means for Buyers and Sellers | Samantha Gornstein</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: #333333;
+            background-color: #ffffff;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* NAVIGATION */
+        .nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+            background: rgba(26, 62, 92, 0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 16px 40px;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .nav-brand {
+            font-size: 14px; font-weight: 300; color: #ffffff;
+            letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none;
+        }
+        .nav-brand span {
+            color: #8bb8d4; font-size: 10px; display: block;
+            letter-spacing: 0.08em; margin-top: 2px;
+        }
+        .nav-links a {
+            color: #c8dce8; text-decoration: none; font-size: 11px;
+            letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500;
+            margin-left: 28px; transition: color 0.2s;
+        }
+        .nav-links a:hover { color: #00a8e1; }
+
+        /* HERO */
+        .hero {
+            position: relative; min-height: 70vh;
+            background: url('https://raw.githubusercontent.com/nicole426/Nicole_Polo_Club_Newsletter/main/Samantha_polo_image.png') center top / cover no-repeat;
+            display: flex; align-items: flex-end; margin-top: 60px;
+        }
+        .hero::before {
+            content: '';
+            position: absolute; inset: 0;
+            background: linear-gradient(180deg, rgba(26,62,92,0.2) 0%, rgba(26,62,92,0.70) 60%, rgba(26,62,92,0.92) 100%);
+        }
+        .hero-content {
+            position: relative; z-index: 1;
+            max-width: 800px; padding: 0 60px 80px 60px;
+        }
+        .hero-label {
+            display: inline-block; background: #00a8e1; color: #ffffff;
+            font-size: 11px; font-weight: 600; letter-spacing: 0.15em;
+            text-transform: uppercase; padding: 6px 16px; margin-bottom: 24px;
+        }
+        .hero h1 {
+            font-size: 44px; font-weight: 300; color: #ffffff;
+            line-height: 1.2; letter-spacing: 0.02em; margin-bottom: 20px;
+        }
+        .hero-meta { font-size: 14px; color: #c8dce8; font-weight: 400; }
+        .hero-meta span { color: #00a8e1; }
+
+        /* ARTICLE BODY */
+        .article-wrap {
+            max-width: 740px; margin: 0 auto; padding: 60px 40px 80px;
+        }
+
+        /* KEY STATS */
+        .key-stats {
+            display: grid; grid-template-columns: repeat(3, 1fr);
+            gap: 0; margin: 0 -40px 50px -40px;
+            border-top: 1px solid #e8e8e8; border-bottom: 1px solid #e8e8e8;
+        }
+        .key-stat { text-align: center; padding: 30px 20px; border-right: 1px solid #e8e8e8; }
+        .key-stat:last-child { border-right: none; }
+        .key-stat .number { font-size: 36px; font-weight: 300; color: #1a3e5c; letter-spacing: -0.02em; line-height: 1; }
+        .key-stat .label { font-size: 10px; font-weight: 600; color: #7a8fa0; letter-spacing: 0.12em; text-transform: uppercase; margin-top: 8px; }
+
+        /* PROSE */
+        .article-wrap h2 {
+            font-size: 26px; font-weight: 300; color: #1a3e5c;
+            letter-spacing: 0.03em; margin: 50px 0 20px 0; padding-top: 20px;
+        }
+        .article-wrap p { font-size: 17px; line-height: 1.8; color: #444444; margin-bottom: 22px; }
+        .article-wrap p.lead { font-size: 19px; color: #333; }
+
+        /* PULL QUOTE */
+        .pull-quote {
+            border-left: 4px solid #00a8e1;
+            padding: 24px 0 24px 28px; margin: 40px 0;
+            font-size: 22px; font-weight: 300; color: #1a3e5c;
+            line-height: 1.5; letter-spacing: 0.01em;
+        }
+
+        /* DATA CALLOUT */
+        .data-callout {
+            background: #f8fbfd; border-radius: 4px;
+            padding: 28px 32px; margin: 36px 0; border-left: 4px solid #00a8e1;
+        }
+        .data-callout .callout-label {
+            font-size: 10px; font-weight: 600; color: #00a8e1;
+            letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 14px;
+        }
+        .data-callout p { font-size: 15px; color: #1a3e5c; margin-bottom: 8px; }
+        .data-callout p:last-child { margin-bottom: 0; }
+        .data-callout strong { color: #00a8e1; }
+
+        /* COMPARISON TABLE */
+        .comparison-table { width: 100%; border-collapse: collapse; margin: 30px 0; }
+        .comparison-table th {
+            background: #1a3e5c; color: #ffffff;
+            font-size: 11px; font-weight: 600; letter-spacing: 0.1em;
+            text-transform: uppercase; padding: 12px 16px; text-align: left;
+        }
+        .comparison-table td { padding: 12px 16px; border-bottom: 1px solid #e8e8e8; font-size: 14px; color: #444; }
+        .comparison-table tr:nth-child(even) td { background: #f8fbfd; }
+        .comparison-table .highlight { color: #1a7c3e; font-weight: 600; }
+
+        /* CTA SECTION */
+        .cta-section { background: #1a3e5c; padding: 70px 60px; text-align: center; }
+        .cta-section .label {
+            font-size: 11px; font-weight: 600; color: #00a8e1;
+            letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 16px;
+        }
+        .cta-section h2 { font-size: 32px; font-weight: 300; color: #ffffff; letter-spacing: 0.03em; margin-bottom: 20px; }
+        .cta-section p { font-size: 16px; color: #c8dce8; line-height: 1.7; max-width: 600px; margin: 0 auto 30px auto; }
+        .cta-name { font-size: 22px; font-weight: 500; color: #ffffff; margin-bottom: 6px; }
+        .cta-title { font-size: 13px; color: #8bb8d4; letter-spacing: 0.08em; margin-bottom: 28px; }
+        .cta-phone { font-size: 28px; font-weight: 300; color: #00a8e1; margin-bottom: 28px; }
+        .cta-btn {
+            display: inline-block; background: #00a8e1; color: #ffffff;
+            text-decoration: none; font-size: 13px; font-weight: 600;
+            letter-spacing: 0.15em; text-transform: uppercase;
+            padding: 16px 44px; border-radius: 2px; transition: background 0.2s;
+        }
+        .cta-btn:hover { background: #0090c4; }
+
+        /* AUTHOR BIO */
+        .author-bio { background: #1a3e5c; padding: 60px; }
+        .author-bio .label {
+            font-size: 11px; font-weight: 600; color: #00a8e1;
+            letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 12px;
+        }
+        .author-bio h3 { font-size: 24px; font-weight: 300; color: #ffffff; letter-spacing: 0.03em; margin-bottom: 16px; }
+        .author-bio p { font-size: 15px; color: #c8dce8; line-height: 1.7; max-width: 700px; margin-bottom: 20px; }
+        .author-bio .contact-info a { color: #00a8e1; text-decoration: none; font-size: 14px; }
+        .author-bio .contact-info span { color: #5a7a8f; margin: 0 8px; }
+
+        /* FOOTER */
+        .footer { background: #0f2a3e; padding: 30px 60px; text-align: center; }
+        .footer p { font-size: 11px; color: #5a7a8f; line-height: 1.6; }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .nav { padding: 14px 20px; }
+            .nav-links { display: none; }
+            .hero { min-height: 50vh; }
+            .hero-content { padding: 0 24px 50px; }
+            .hero h1 { font-size: 28px; }
+            .article-wrap { padding: 40px 24px 60px; }
+            .key-stats { grid-template-columns: 1fr; margin: 0 -24px 40px -24px; }
+            .key-stat { border-right: none; border-bottom: 1px solid #e8e8e8; padding: 20px; }
+            .key-stat:last-child { border-bottom: none; }
+            .article-wrap h2 { font-size: 22px; }
+            .cta-section { padding: 50px 24px; }
+            .cta-section h2 { font-size: 24px; }
+            .author-bio { padding: 40px 24px; }
+            .footer { padding: 24px; }
+        }
+    </style>
 </head>
-<body style="margin:0;padding:0;background-color:#f0f4f7;font-family:Arial,Helvetica,sans-serif;">
+<body>
 
-<!-- WRAPPER -->
-<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f0f4f7;">
-  <tr>
-    <td align="center" style="padding:30px 10px;">
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <a href="newsletter.html" class="nav-brand">
+            The Edmund Bogen Team
+            <span>Douglas Elliman Real Estate</span>
+        </a>
+        <div class="nav-links">
+            <a href="listings.html">Polo Club Listings</a>
+            <a href="newsletter.html">Newsletter</a>
+            <a href="mailto:samantha@bogenhomes.com">Contact</a>
+        </div>
+    </nav>
 
-      <!-- CARD -->
-      <table width="640" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;max-width:640px;width:100%;">
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-label">Polo Club Market Alert &nbsp;&bull;&nbsp; April 2026</span>
+            <h1>A $75,000 Deadline: What the Polo Club’s New Capital Contribution Means for Buyers and Sellers</h1>
+            <div class="hero-meta">By Samantha Gornstein &nbsp;&bull;&nbsp; <span>The Edmund Bogen Team at Douglas Elliman</span></div>
+        </div>
+    </section>
 
-        <!-- HEADER -->
-        <tr>
-          <td style="background-color:#1a3e5c;padding:28px 36px 22px;">
-            <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:11px;letter-spacing:2px;color:#00a8e1;font-weight:bold;text-transform:uppercase;">The Edmund Bogen Team</p>
-            <p style="margin:4px 0 0;font-family:Arial,Helvetica,sans-serif;font-size:9px;letter-spacing:1.5px;color:#ffffff;text-transform:uppercase;">Douglas Elliman Real Estate</p>
-          </td>
-        </tr>
-        <!-- Blue accent stripe -->
-        <tr><td style="background-color:#00a8e1;height:4px;line-height:4px;font-size:1px;">&nbsp;</td></tr>
+    <!-- MAIN ARTICLE -->
+    <article class="article-wrap">
 
-        <!-- KICKER + HEADLINE -->
-        <tr>
-          <td style="padding:32px 36px 0;">
-            <p style="margin:0 0 8px;font-family:Arial,Helvetica,sans-serif;font-size:10px;letter-spacing:2px;color:#00a8e1;font-weight:bold;text-transform:uppercase;">Polo Club Market Alert &nbsp;|&nbsp; March 2026</p>
-            <h1 style="margin:0 0 10px;font-family:Arial,Helvetica,sans-serif;font-size:26px;font-weight:bold;color:#1a3e5c;line-height:1.25;">A $75,000 Deadline: What the Polo Club’s New Capital Contribution Means for Buyers and Sellers</h1>
-            <p style="margin:0 0 16px;font-family:Arial,Helvetica,sans-serif;font-size:11px;color:#666666;">By Samantha Gornstein &nbsp;–&nbsp; The Edmund Bogen Team at Douglas Elliman Real Estate &nbsp;|&nbsp; March 2026</p>
-            <hr style="border:none;border-top:2px solid #00a8e1;margin:0 0 24px;" />
-          </td>
-        </tr>
+        <!-- KEY STATS -->
+        <div class="key-stats">
+            <div class="key-stat">
+                <div class="number">$75K</div>
+                <div class="label">Savings Opportunity</div>
+            </div>
+            <div class="key-stat">
+                <div class="number">4/16</div>
+                <div class="label">Contract Deadline</div>
+            </div>
+            <div class="key-stat">
+                <div class="number">$325K</div>
+                <div class="label">New Contribution</div>
+            </div>
+        </div>
 
-        <!-- OPENING -->
-        <tr>
-          <td style="padding:0 36px 16px;">
-            <p style="margin:0 0 12px;font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#444444;line-height:1.7;">As South Florida’s season winds down, most conversations in the market shift toward summer slowdowns and off-season strategy. But for anyone with their eye on <strong>The Polo Club of Boca Raton</strong>—one of Palm Beach County’s most storied and sought-after luxury communities—the next few weeks may represent the most consequential window of opportunity in recent memory.</p>
-            <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#444444;line-height:1.7;font-style:italic;">Let’s break it down.</p>
-          </td>
-        </tr>
+        <p class="lead">As South Florida’s season winds down, most conversations in the market shift toward summer slowdowns and off-season strategy. But for anyone with their eye on <strong>The Polo Club of Boca Raton</strong>—one of Palm Beach County’s most storied and sought-after luxury communities—the next few weeks may represent the most consequential window of opportunity in recent memory.</p>
 
-        <!-- SECTION 1 -->
-        <tr>
-          <td style="padding:20px 36px 0;">
-            <h2 style="margin:0 0 10px;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:bold;color:#1a3e5c;border-left:4px solid #00a8e1;padding-left:12px;">The Change: What You Need to Know</h2>
-            <p style="margin:0 0 12px;font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#444444;line-height:1.7;">Effective <strong>May 31, 2026</strong>, the Polo Club’s capital contribution will increase from <strong>$250,000 to $325,000</strong>—a $75,000 adjustment that reflects the club’s continued investment in its world-class lifestyle, championship golf, and unparalleled social amenities.</p>
-            <p style="margin:0 0 16px;font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#444444;line-height:1.7;">This is not a rumor or speculation. It is a confirmed, upcoming policy change.</p>
-          </td>
-        </tr>
+        <h2>The Change: What You Need to Know</h2>
 
-        <!-- CALLOUT: MARK YOUR CALENDAR -->
-        <tr>
-          <td style="padding:0 36px 16px;">
-            <table width="100%" cellpadding="0" cellspacing="0" border="0">
-              <tr>
-                <td style="background-color:#f4f6f8;border-left:5px solid #00a8e1;padding:16px 20px;">
-                  <p style="margin:0 0 6px;font-family:Arial,Helvetica,sans-serif;font-size:10px;letter-spacing:1.5px;font-weight:bold;color:#00a8e1;text-transform:uppercase;">Mark Your Calendar</p>
-                  <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#1a3e5c;line-height:1.65;">Any contract executed <strong>on or before April 16, 2026</strong> will lock in the current $250,000 capital contribution — regardless of when the closing occurs. Miss this date, and buyers will owe the new $325,000 figure at closing.</p>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
+        <p>Effective <strong>May 31, 2026</strong>, the Polo Club’s capital contribution will increase from <strong>$250,000 to $325,000</strong>—a $75,000 adjustment that reflects the club’s continued investment in its world-class lifestyle, championship golf, and unparalleled social amenities.</p>
 
-        <tr>
-          <td style="padding:0 36px 16px;">
-            <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#444444;line-height:1.7;">The math is compelling: buyers who move quickly stand to save $75,000 at the table. That’s a meaningful number by any measure — and in a community where every detail of lifestyle is carefully curated, it’s the kind of savings that sharpens decision-making fast.</p>
-          </td>
-        </tr>
+        <p>This is not a rumor or speculation. It is a confirmed, upcoming policy change.</p>
 
-        <!-- SECTION 2 -->
-        <tr>
-          <td style="padding:8px 36px 0;">
-            <h2 style="margin:0 0 10px;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:bold;color:#1a3e5c;border-left:4px solid #00a8e1;padding-left:12px;">Why This Matters More Than a Fee Adjustment</h2>
-            <p style="margin:0 0 12px;font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#444444;line-height:1.7;">At first glance, a capital contribution increase might read as routine club administration. But in the world of luxury real estate, <strong>club economics and property values are inseparable.</strong></p>
-            <p style="margin:0 0 12px;font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#444444;line-height:1.7;">The Polo Club is not simply a community — it’s a membership lifestyle anchored by championship golf on two private courses, world-class racquet sports, and a vibrant social scene with dining, fitness, spa, and cultural programming that rivals resort living.</p>
-            <p style="margin:0 0 16px;font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#444444;line-height:1.7;">When a community of this caliber raises its entry costs, it signals one thing clearly: the lifestyle is in demand, and the club is investing to sustain and elevate it. For homeowners already inside the gates, that’s validation. For those still on the outside looking in, it’s a flashing yellow light.</p>
-          </td>
-        </tr>
+        <div class="data-callout">
+            <div class="callout-label">Mark Your Calendar</div>
+            <p>Any contract executed <strong>on or before April 16, 2026</strong> will lock in the current $250,000 capital contribution — regardless of when the closing occurs. Miss this date, and buyers will owe the new $325,000 figure at closing.</p>
+        </div>
 
-        <!-- COMPARISON TABLE -->
-        <tr>
-          <td style="padding:0 36px 20px;">
-            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
-              <tr>
-                <th width="40%" style="background-color:#1a3e5c;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:bold;padding:10px 12px;text-align:left;border:1px solid #e0e6ec;"></th>
-                <th width="30%" style="background-color:#1a3e5c;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:bold;padding:10px 12px;text-align:center;border:1px solid #e0e6ec;">Before April 16, 2026</th>
-                <th width="30%" style="background-color:#1a3e5c;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:bold;padding:10px 12px;text-align:center;border:1px solid #e0e6ec;">After May 31, 2026</th>
-              </tr>
-              <tr>
-                <td style="font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#1a3e5c;padding:10px 12px;border:1px solid #e0e6ec;background-color:#f4f6f8;">Capital Contribution</td>
-                <td style="font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#444444;padding:10px 12px;border:1px solid #e0e6ec;text-align:center;background-color:#f4f6f8;">$250,000</td>
-                <td style="font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#444444;padding:10px 12px;border:1px solid #e0e6ec;text-align:center;background-color:#f4f6f8;">$325,000</td>
-              </tr>
-              <tr>
-                <td style="font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#1a3e5c;padding:10px 12px;border:1px solid #e0e6ec;">Savings Opportunity</td>
-                <td style="font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#1a7c3e;padding:10px 12px;border:1px solid #e0e6ec;text-align:center;">$75,000</td>
-                <td style="font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#444444;padding:10px 12px;border:1px solid #e0e6ec;text-align:center;">—</td>
-              </tr>
-              <tr>
-                <td style="font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#1a3e5c;padding:10px 12px;border:1px solid #e0e6ec;background-color:#f4f6f8;">Contract Requirement</td>
-                <td style="font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#444444;padding:10px 12px;border:1px solid #e0e6ec;text-align:center;background-color:#f4f6f8;">Executed by 4/16/26</td>
-                <td style="font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#444444;padding:10px 12px;border:1px solid #e0e6ec;text-align:center;background-color:#f4f6f8;">N/A</td>
-              </tr>
-            </table>
-          </td>
-        </tr>
+        <p>The math is compelling: buyers who move quickly stand to save $75,000 at the table. That’s a meaningful number by any measure — and in a community where every detail of lifestyle is carefully curated, it’s the kind of savings that sharpens decision-making fast.</p>
 
-        <!-- SECTION 3 -->
-        <tr>
-          <td style="padding:8px 36px 0;">
-            <h2 style="margin:0 0 10px;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:bold;color:#1a3e5c;border-left:4px solid #00a8e1;padding-left:12px;">What This Means for Buyers</h2>
-            <p style="margin:0 0 12px;font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#444444;line-height:1.7;">If you’ve been considering a home at The Polo Club — whether as a primary residence, a seasonal retreat, or a strategic real estate investment — the calculus has never been clearer. The April 16th contract deadline creates a rare, hard-edged opportunity: lock in a price that is effectively $75,000 lower than what buyers will pay in just weeks.</p>
-            <p style="margin:0 0 16px;font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#444444;line-height:1.7;">In a market where negotiating a $75,000 concession is a significant achievement, having it handed to you by the calendar is exceptional. We currently have <strong>qualified, motivated buyers</strong> actively seeking homes at The Polo Club — and sellers who move now stand to benefit directly from that urgency.</p>
-          </td>
-        </tr>
+        <h2>Why This Matters More Than a Fee Adjustment</h2>
 
-        <!-- SECTION 4 -->
-        <tr>
-          <td style="padding:8px 36px 0;">
-            <h2 style="margin:0 0 10px;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:bold;color:#1a3e5c;border-left:4px solid #00a8e1;padding-left:12px;">What This Means for Sellers</h2>
-            <p style="margin:0 0 12px;font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#444444;line-height:1.7;">Sellers at The Polo Club are in an enviable position. Buyer demand exists — and the April 16th deadline is actively motivating qualified purchasers who might otherwise take a wait-and-see approach.</p>
-            <p style="margin:0 0 16px;font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#444444;line-height:1.7;">In plain English: buyers have a financial reason to move quickly. That urgency benefits sellers who are priced correctly and ready to transact. If you’ve been sitting on the fence about whether to list this season or wait until fall, the market is sending you a clear signal.</p>
-          </td>
-        </tr>
+        <p>At first glance, a capital contribution increase might read as routine club administration. But in the world of luxury real estate, <strong>club economics and property values are inseparable.</strong></p>
 
-        <!-- BOTTOM LINE CALLOUT -->
-        <tr>
-          <td style="padding:8px 36px 24px;">
-            <hr style="border:none;border-top:1px solid #e0e6ec;margin:0 0 16px;" />
-            <table width="100%" cellpadding="0" cellspacing="0" border="0">
-              <tr>
-                <td style="background-color:#f4f6f8;border-left:5px solid #00a8e1;padding:16px 20px;">
-                  <p style="margin:0 0 6px;font-family:Arial,Helvetica,sans-serif;font-size:10px;letter-spacing:1.5px;font-weight:bold;color:#00a8e1;text-transform:uppercase;">The Bottom Line</p>
-                  <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#1a3e5c;line-height:1.65;">South Florida’s season always ends. What’s different this year is that it comes with a deadline attached — and $75,000 on the line. Whether you are buying, selling, or simply evaluating your options, this is the moment to have a serious conversation.</p>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
+        <p>The Polo Club is not simply a community — it’s a membership lifestyle anchored by championship golf on two private courses, world-class racquet sports, and a vibrant social scene with dining, fitness, spa, and cultural programming that rivals resort living.</p>
 
-        <!-- CLUB FEE COMPARISON TABLE -->
-        <tr>
-          <td style="padding:0 36px 8px;">
-            <h2 style="margin:0 0 10px;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:bold;color:#1a3e5c;border-left:4px solid #00a8e1;padding-left:12px;">South Florida Club Fee Landscape: How The Polo Club Compares</h2>
-            <p style="margin:0 0 14px;font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#444444;line-height:1.7;">The Polo Club’s upcoming increase is part of a broader trend across Palm Beach County’s premier private communities. Here’s how the local club fee landscape looks today:</p>
-            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
-              <tr>
-                <th style="background-color:#1a3e5c;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:bold;padding:10px 10px;text-align:left;border:1px solid #e0e6ec;">Club Name</th>
-                <th style="background-color:#1a3e5c;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:bold;padding:10px 10px;text-align:left;border:1px solid #e0e6ec;">Current Initiation Fee</th>
-                <th style="background-color:#1a3e5c;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:bold;padding:10px 10px;text-align:left;border:1px solid #e0e6ec;">Updated Pricing</th>
-                <th style="background-color:#1a3e5c;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:bold;padding:10px 10px;text-align:left;border:1px solid #e0e6ec;">Effective / Reported Date</th>
-              </tr>
-              <tr style="background-color:#f4f6f8;">
-                <td style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:bold;color:#1a3e5c;padding:9px 10px;border:1px solid #e0e6ec;vertical-align:top;">St. Andrews Country Club</td>
-                <td style="font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#444444;padding:9px 10px;border:1px solid #e0e6ec;vertical-align:top;">$450,000; $50,000 POA contribution</td>
-                <td style="font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#444444;padding:9px 10px;border:1px solid #e0e6ec;vertical-align:top;">Increase in current year from $400K</td>
-                <td style="font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#444444;padding:9px 10px;border:1px solid #e0e6ec;vertical-align:top;">Local member reports &amp; Realtor commentary (2025)</td>
-              </tr>
-              <tr style="background-color:#ffffff;">
-                <td style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:bold;color:#1a3e5c;padding:9px 10px;border:1px solid #e0e6ec;vertical-align:top;">Boca West Country Club</td>
-                <td style="font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#444444;padding:9px 10px;border:1px solid #e0e6ec;vertical-align:top;">Social/entry joining fee ~$150,000; base annual dues ~$24,455</td>
-                <td style="font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#444444;padding:9px 10px;border:1px solid #e0e6ec;vertical-align:top;">Joining fee planned to increase to ~$215,000</td>
-                <td style="font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#444444;padding:9px 10px;border:1px solid #e0e6ec;vertical-align:top;">Increase expected Oct 1, 2026 (club announcement)</td>
-              </tr>
-              <tr style="background-color:#f4f6f8;">
-                <td style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:bold;color:#1a3e5c;padding:9px 10px;border:1px solid #e0e6ec;vertical-align:top;">Broken Sound Country Club</td>
-                <td style="font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#444444;padding:9px 10px;border:1px solid #e0e6ec;vertical-align:top;">Sports ~$130K; New Course Golf ~$175K; Old Course Golf ~$225K</td>
-                <td style="font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#444444;padding:9px 10px;border:1px solid #e0e6ec;vertical-align:top;">Sports $150,000; Club Course $200,000; Old Course $300,000</td>
-                <td style="font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#444444;padding:9px 10px;border:1px solid #e0e6ec;vertical-align:top;">April 1, 2026</td>
-              </tr>
-              <tr style="background-color:#ffffff;">
-                <td style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:bold;color:#1a3e5c;padding:9px 10px;border:1px solid #e0e6ec;vertical-align:top;">Stonebridge Country Club</td>
-                <td style="font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#444444;padding:9px 10px;border:1px solid #e0e6ec;vertical-align:top;">$150,000 (non-refundable); capital reserve contribution $3,000</td>
-                <td style="font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#444444;padding:9px 10px;border:1px solid #e0e6ec;vertical-align:top;">Initiation fee and annual dues saw incremental increases over prior years</td>
-                <td style="font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#444444;padding:9px 10px;border:1px solid #e0e6ec;vertical-align:top;">Dues and fees will increase for new year starting Nov 1st, announced in August</td>
-              </tr>
-            </table>
-            <p style="margin:8px 0 0;font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#888888;font-style:italic;">Sources: Club communications, public fee schedules, local member reports, and Realtor commentary (2025–2026).</p>
-          </td>
-        </tr>
+        <div class="pull-quote">
+            “When a community of this caliber raises its entry costs, it signals one thing clearly: the lifestyle is in demand.”
+        </div>
 
-        <!-- CTA BLOCK -->
-        <tr>
-          <td style="padding:24px 36px;">
-            <table width="100%" cellpadding="0" cellspacing="0" border="0">
-              <tr>
-                <td style="background-color:#1a3e5c;padding:28px 28px;text-align:center;">
-                  <p style="margin:0 0 8px;font-family:Arial,Helvetica,sans-serif;font-size:18px;font-weight:bold;color:#ffffff;line-height:1.3;">READY TO ACT BEFORE THE DEADLINE?</p>
-                  <p style="margin:0 0 16px;font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#cce8f4;line-height:1.6;">The April 16th window won’t wait — and neither will the buyers we have actively searching for Polo Club homes right now.</p>
-                  <p style="margin:0 0 6px;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:bold;color:#00a8e1;letter-spacing:1px;text-transform:uppercase;">Contact Our Polo Club Specialist Today</p>
-                  <p style="margin:0 0 4px;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:bold;color:#ffffff;">Samantha Gornstein</p>
-                  <p style="margin:0 0 10px;font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#cce8f4;">The Edmund Bogen Team at Douglas Elliman Real Estate</p>
-                  <p style="margin:0 0 16px;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:bold;color:#00a8e1;">561-707-6607</p>
-                  <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#cce8f4;line-height:1.6;">Whether you are a buyer looking to lock in the current $250,000 capital contribution or a seller ready to capitalize on motivated, qualified demand — we are your trusted guide to The Polo Club market.<br/><br/>Call or text Samantha now. <strong style="color:#ffffff;">The deadline is April 16, 2026.</strong></p>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
+        <p>When a community of this caliber raises its entry costs, it signals one thing clearly: the lifestyle is in demand, and the club is investing to sustain and elevate it. For homeowners already inside the gates, that’s validation. For those still on the outside looking in, it’s a flashing yellow light.</p>
 
-        <!-- AUTHOR BIO -->
-        <tr>
-          <td style="padding:0 36px 32px;">
-            <hr style="border:none;border-top:1px solid #e0e6ec;margin:0 0 16px;" />
-            <p style="margin:0 0 2px;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:bold;color:#1a3e5c;">Samantha Gornstein</p>
-            <p style="margin:0 0 10px;font-family:Arial,Helvetica,sans-serif;font-size:11px;color:#00a8e1;font-style:italic;">Luxury Real Estate Advisor &nbsp;|&nbsp; The Edmund Bogen Team at Douglas Elliman</p>
-            <p style="margin:0 0 8px;font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#666666;line-height:1.65;">Specializing in South Florida’s most prestigious country club communities, Samantha brings institutional-grade market intelligence to every client relationship. With deep expertise in Polo Club, Stonebridge, and the greater Boca Raton luxury market, Samantha and her team deliver data-driven guidance for discerning buyers and sellers.</p>
-            <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#666666;">561-707-6607 &nbsp;|&nbsp; samantha@bogenhomes.com &nbsp;|&nbsp; www.bogenhomes.com</p>
-          </td>
-        </tr>
+        <table class="comparison-table">
+            <tr>
+                <th></th>
+                <th>Before April 16, 2026</th>
+                <th>After May 31, 2026</th>
+            </tr>
+            <tr>
+                <td><strong>Capital Contribution</strong></td>
+                <td>$250,000</td>
+                <td>$325,000</td>
+            </tr>
+            <tr>
+                <td><strong>Savings Opportunity</strong></td>
+                <td class="highlight">$75,000</td>
+                <td>—</td>
+            </tr>
+            <tr>
+                <td><strong>Contract Requirement</strong></td>
+                <td>Executed by 4/16/26</td>
+                <td>N/A</td>
+            </tr>
+        </table>
 
-        <!-- FOOTER -->
-        <tr><td style="background-color:#00a8e1;height:4px;line-height:4px;font-size:1px;">&nbsp;</td></tr>
-        <tr>
-          <td style="background-color:#1a3e5c;padding:16px 36px;text-align:center;">
-            <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#aaccdd;">The Edmund Bogen Team &nbsp;|&nbsp; Douglas Elliman Real Estate &nbsp;|&nbsp; (561) 235-7575 &nbsp;|&nbsp; edmund@bogenhomes.com</p>
-          </td>
-        </tr>
+        <h2>What This Means for Buyers</h2>
 
-      </table>
-      <!-- END CARD -->
+        <p>If you’ve been considering a home at The Polo Club — whether as a primary residence, a seasonal retreat, or a strategic real estate investment — the calculus has never been clearer. The April 16th contract deadline creates a rare, hard-edged opportunity: lock in a price that is effectively $75,000 lower than what buyers will pay in just weeks.</p>
 
-    </td>
-  </tr>
-</table>
+        <p>In a market where negotiating a $75,000 concession is a significant achievement, having it handed to you by the calendar is exceptional. We currently have <strong>qualified, motivated buyers</strong> actively seeking homes at The Polo Club — and sellers who move now stand to benefit directly from that urgency.</p>
+
+        <h2>What This Means for Sellers</h2>
+
+        <p>Sellers at The Polo Club are in an enviable position. Buyer demand exists — and the April 16th deadline is actively motivating qualified purchasers who might otherwise take a wait-and-see approach.</p>
+
+        <p>In plain English: buyers have a financial reason to move quickly. That urgency benefits sellers who are priced correctly and ready to transact. If you’ve been sitting on the fence about whether to list this season or wait until fall, the market is sending you a clear signal.</p>
+
+        <div class="data-callout">
+            <div class="callout-label">The Bottom Line</div>
+            <p>South Florida’s season always ends. What’s different this year is that it comes with a deadline attached — and $75,000 on the line. Whether you are buying, selling, or simply evaluating your options, this is the moment to have a serious conversation.</p>
+        </div>
+
+        <h2>South Florida Club Fee Landscape: How The Polo Club Compares</h2>
+
+        <p>The Polo Club’s upcoming increase is part of a broader trend across Palm Beach County’s premier private communities. Here’s how the local club fee landscape looks today:</p>
+
+        <table class="comparison-table">
+            <tr>
+                <th>Club Name</th>
+                <th>Current Initiation Fee</th>
+                <th>Updated Pricing</th>
+                <th>Effective Date</th>
+            </tr>
+            <tr>
+                <td><strong>St. Andrews Country Club</strong></td>
+                <td>$450,000; $50,000 POA</td>
+                <td>Increased from $400K</td>
+                <td>2025</td>
+            </tr>
+            <tr>
+                <td><strong>Boca West Country Club</strong></td>
+                <td>~$150,000; dues ~$24,455/yr</td>
+                <td>~$215,000</td>
+                <td>Oct 1, 2026</td>
+            </tr>
+            <tr>
+                <td><strong>Broken Sound Country Club</strong></td>
+                <td>Sports ~$130K &ndash; Golf ~$225K</td>
+                <td>Sports $150K &ndash; Old Course $300K</td>
+                <td>April 1, 2026</td>
+            </tr>
+            <tr>
+                <td><strong>Stonebridge Country Club</strong></td>
+                <td>$150,000 (non-refundable)</td>
+                <td>Incremental increases</td>
+                <td>Nov 1 annually</td>
+            </tr>
+        </table>
+        <p style="font-size:12px;color:#999;font-style:italic;">Sources: Club communications, public fee schedules, local member reports, and Realtor commentary (2025–2026).</p>
+
+    </article>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+        <div class="label">Ready to Act Before the Deadline?</div>
+        <h2>The April 16th Window Won’t Wait</h2>
+        <p>The buyers we have actively searching for Polo Club homes right now are motivated by this deadline. Whether you are buying or selling, this is the moment to have a serious conversation.</p>
+        <div class="cta-name">Samantha Gornstein</div>
+        <div class="cta-title">The Edmund Bogen Team &nbsp;&bull;&nbsp; Douglas Elliman Real Estate</div>
+        <div class="cta-phone">561-707-6607</div>
+        <a href="mailto:samantha@bogenhomes.com" class="cta-btn">Contact Samantha Today</a>
+    </section>
+
+    <!-- AUTHOR BIO -->
+    <section class="author-bio">
+        <div class="label">About the Author</div>
+        <h3>Samantha Gornstein</h3>
+        <p>Specializing in South Florida’s most prestigious country club communities, Samantha brings institutional-grade market intelligence to every client relationship. With deep expertise in Polo Club, Stonebridge, and the greater Boca Raton luxury market, Samantha and her team deliver data-driven guidance for discerning buyers and sellers.</p>
+        <div class="contact-info">
+            <a href="tel:+15617076607">561-707-6607</a>
+            <span>&bull;</span>
+            <a href="mailto:samantha@bogenhomes.com">samantha@bogenhomes.com</a>
+            <span>&bull;</span>
+            <a href="https://bogenhomes.com/agents/samantha-gornstein/" target="_blank">bogenhomes.com</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>The Edmund Bogen Team &nbsp;&bull;&nbsp; Douglas Elliman Real Estate &nbsp;&bull;&nbsp; 17657 Foxborough Lane, Boca Raton, FL 33496<br>
+        &copy; 2026 Douglas Elliman Real Estate. All material presented herein is intended for information purposes only. While this information is believed to be correct, it is represented subject to errors, omissions, changes or withdrawal without notice. All property information, including, but not limited to square footage, room count, number of bedrooms and the school district in property listings should be verified by your own attorney, architect or zoning expert. Equal Housing Opportunity.</p>
+    </footer>
 
 </body>
 </html>
